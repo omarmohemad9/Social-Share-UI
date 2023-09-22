@@ -18,13 +18,3 @@ if(window.localStorage.getItem("btn")){
     btns[n].classList.add("active")
 }
 
-let x = window.matchMedia("(max-width:1200px)")
-let pop_up = document.querySelector(".pop-up")
-console.log(x.matches)
-if(x.matches){
-    pop_up.classList.add("active")
-    setTimeout(()=>{
-    pop_up.classList.remove("active")
-
-    },2000)
-}
